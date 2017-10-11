@@ -1,6 +1,7 @@
 body {
-background-image: linear-gradient(to right top, #005aa0, #005496, #004e8d, #004883, #00427a);
+background-image: linear-gradient(to right top, #1a1176, #00388b, #004f88, #006279, #13716d);
 display: flex;
+background-attachment: fixed;
 flex-direction: column;
 justify-content: center;
 align-items: center;
