@@ -6,7 +6,7 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1 class="hero">Help me choose between...</h1>
+    <h1 class="hero">Help me choose insurace...</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
@@ -14,7 +14,9 @@
       <button class="AddOption">Add</button>
     </div>
     <div class="resultSection"></div>
+    
     <button class="Go">Go!</button>
+
 
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script>
@@ -26,8 +28,20 @@
         }
 
         $('.AddOption').click(add_option)
-        })
 
+        var options = []
+        var submit = function () {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+            options.push($(this).val())
+          })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.resultSection').text(winner)
+        }
+        $('.Go').click(submit)
+        })
       </script>
   </body>
 </html>

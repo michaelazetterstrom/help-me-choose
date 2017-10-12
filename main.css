@@ -1,5 +1,5 @@
 body {
-background-image: linear-gradient(to right top, #1a1176, #00388b, #004f88, #006279, #13716d);
+background-image: linear-gradient(to right top, #005aa0, #005496, #004e8d, #004883, #00427a);
 display: flex;
 background-attachment: fixed;
 flex-direction: column;
@@ -19,6 +19,7 @@ h1 {
 .inputSection {
   margin: 50px 0px 80px 0px;
   width: 400px;
+
 }
 
 .inputs {
@@ -29,11 +30,33 @@ h1 {
 
 input {
   margin-top: 10px;
-
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  border-width: 0;
+  font-family: "Arial";
 }
 
 .AddOption {
   margin-top: 10px;
+  padding-top: 6px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  border-width: 0;
+  background-color: white;
+  font-family: "Arial";
+  color:#00427a;
+  font-size: 14px;
+}
+
+.AddOption:hover {
+    opacity: 0.8;
 }
 
 .hero {
@@ -45,15 +68,32 @@ color: white;
 
 .Go {
 padding-top: 15px;
-padding-right: 23px;
-padding-bottom: 15px;
-padding-left: 23px;
-border-radius: 30px;
+padding-right: 30px;
+padding-bottom: 13px;
+padding-left: 30px;
+border-radius: 20px;
+letter-spacing: 1px;
+border-width: 0;
 background-color: white;
-border-color: white;
-letter-spacing: 2px;
+font-family: "Intro Cond";
+font-weight: bold;
+font-size: 16px;
+color:#00427a;
+transition: all;
 }
 
-img {
-  margin-top: 50px;
+.Go:hover {
+    opacity: 0.8;
+}
+
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: "Intro Cond";
+  font-weight: bold;
+  color: white;
 }
